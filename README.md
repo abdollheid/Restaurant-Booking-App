@@ -1,18 +1,11 @@
 # Restaurant-Booking-App
 retaurant booking app built in using spring boot and angularjs. 
 
-- Backend 
-<br>
-is served using spring boot, hibernate.
-it serves the main functionaltiy through APIs controllers as well as view controller to handle UI.
+- Backend is served using spring boot, hibernate. it serves the main functionaltiy through APIs controllers as well as view controller to handle UI.
 
-- Database
-<br>
-Mysql is used as database solution, below is the design used. 
+- Mysql is used as database solution, below is the design used. 
 
-- Front-end
-<br>
-front-end implemented using Angularjs
+- Front-end implemented using Angularjs
 
 
 ## Database Design 
