@@ -1,0 +1,126 @@
+
+body {
+    min-height: 80vh;
+    background-color: #475d62;
+
+    background-image: url('../images/wallpaper.jpg');
+    background-size: 500px;
+    background-repeat: repeat;
+
+}
+
+
+/* phone screen */
+@media (max-width: 768px ) {
+    .container {
+        padding-right: 0px;
+        padding-left: 0px;
+        max-width: 670px;
+    }
+}
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: papayawhip;
+}
+
+footer p {
+    margin-bottom: .25rem;
+    padding: 0 1rem;
+}
+
+
+.slogan {
+    margin-right: -3px;
+    display: inline;
+}
+
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+#logout {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+
+}
+
+
+.error {
+    color: #ff0000;
+
+}
+
+.mb-3, .my-3 {
+    margin-bottom: 0rem !important;
+    margin-top: 0rem !important;
+}
+
+
+.input-button {
+    margin: 15px;
+}
+
+
+.fixed-right {
+    position: fixed;
+    z-index: 20;
+    right: 20px;
+    bottom: 20px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    padding: 6px;
+    font-size: 2rem;
+
+}
+
+.feedback-message {
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    bottom: 20px;
+    margin: 0px;
+    padding: 6px;
+
+    font-size: 1.5rem;
+    color: white;
+    background-color: darkorange;
+}
+
+.main-button{
+    margin-right:2rem;
+}
+
+.table {
+    margin-bottom: 0px !important;
+}
+
+.table-container{
+    margin-bottom: 1rem !important;
+}
+
+
+.cell-input {
+
+    margin-bottom: 16px;
+}
+
+td, tr {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.form-container{
+    background-color: #343a40;
+    display: flow-root;
+    margin-bottom: 8px;
+    padding: 10px 10px 0px 10px;
+}

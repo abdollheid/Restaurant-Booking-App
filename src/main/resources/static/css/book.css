@@ -1,0 +1,35 @@
+.center {
+    width: 90%;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .center {
+        width: 80%;
+        transform: none;
+        position: relative;
+        top: 0%;
+        left: 0%;
+        margin: auto;
+    }
+}
+
+
+.card {
+    background-color: #1e2833;
+}
+
+
+.btn {
+    width: 100%;
+    white-space: normal;
+}
+
+.card-text {
+    font-size: .9em;
+}
