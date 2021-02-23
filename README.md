@@ -11,7 +11,7 @@ retaurant booking app built in using spring boot and angularjs.
 ## Database Design 
 3 tables to mange the interactions between the users and the tables.
 The following data model explains the tables relations and properties. 
-![](presentation-images/ER.png?raw=true)
+![](presentation-images/ER.PNG?raw=true)
 
 ## Website Screens
 
