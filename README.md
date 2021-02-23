@@ -10,16 +10,16 @@ The following data model explains the tables relations and properties.
 
 ## Website Screens
 
-![](project_presentation_images/screens-1.png?raw=true)
+![](presentation-images/screens-1.png?raw=true)
 <br>
 
-![](project_presentation_images/screens-2.png?raw=true)
+![](presentation-images/screens-2.png?raw=true)
 <br>
 
-![](project_presentation_images/screens-3.png?raw=true)
+![](presentation-images/screens-3.png?raw=true)
 <br>
 
-![](project_presentation_images/screens-4.png?raw=true)
+![](presentation-images/screens-4.png?raw=true)
 <br>
 
 
@@ -36,4 +36,8 @@ The following data model explains the tables relations and properties.
 4. the app should be running on `http://localhost:8789/`
 5. to run tests use the command `.\mvnw test` for Windows,  `./mvnw test` for Mac/Linux.
 6. app configuration is in `src/main/resources/application.properties`
+
+- Config file
+![](presentation-images/config.png?raw=true)
+<br>
 
