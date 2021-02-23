@@ -38,6 +38,6 @@ The following data model explains the tables relations and properties.
 6. app configuration is in `src/main/resources/application.properties`
 
 - Config file
-![](presentation-images/config.png?raw=true)
+![](presentation-images/config.PNG?raw=true)
 <br>
 
