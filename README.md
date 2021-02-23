@@ -31,7 +31,6 @@ The following data model explains the tables relations and properties.
 ## Requirements
 1. java 8+.
 2. MySql 5.5
-3. mysql.
 
 
 ## To Run App
