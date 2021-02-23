@@ -35,9 +35,9 @@ The following data model explains the tables relations and properties.
 3. run the command `.\mvnw spring-boot:run` for Windows,  `./mvnw spring-boot:run` for Mac/Linux.
 4. the app should be running on `http://localhost:8789/`
 5. to run tests use the command `.\mvnw test` for Windows,  `./mvnw test` for Mac/Linux.
-6. app configuration is in `src/main/resources/application.properties`
+6. app configuration is in `src/main/resources/application.properties`, app port can be change from the config 
 
 - Config file
+
 ![](presentation-images/config.PNG?raw=true)
-<br>
 
