@@ -37,7 +37,7 @@ The following data model explains the tables relations and properties.
 1. clone the app and navigate to app main folder.  
 2. run `sql-scripts/Restaurant-init.sql` MySql database script to set the necessary database and tables. 
 3. run the command `.\mvnw spring-boot:run` for Windows,  `./mvnw spring-boot:run` for Mac/Linux.
-4. the app should be running on `http://localhost:8789/`
+4. the app should be running on `http://localhost:8787/`
 5. to run tests use the command `.\mvnw test` for Windows,  `./mvnw test` for Mac/Linux.
 6. if necessary, server port can be change from app configuration in `src/main/resources/application.properties`.
 
