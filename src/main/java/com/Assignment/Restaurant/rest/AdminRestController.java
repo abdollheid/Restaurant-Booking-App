@@ -33,14 +33,14 @@ public class AdminRestController {
 
     @GetMapping("/table")
     public ResponseEntity<List<Table>> getTables(HttpServletRequest request) {
-        logger.trace("@App-CustomExceptionHandler-getTables: Got request on " + request.getRequestURI());
+        logger.trace("@App-AdminRestController-getTables: Got request on " + request.getRequestURI());
 
         List<Table> allTables = adminService.getAllTables();
 
         if (allTables == null || allTables.size() < 1)
             new ResponseEntity<>(null, HttpStatus.NO_CONTENT);
 
-        logger.debug("@App-CustomExceptionHandler-getTables: allTables: " + allTables);
+        logger.debug("@App-AdminRestController-getTables: allTables: " + allTables);
 
         return new ResponseEntity<>(allTables, HttpStatus.OK);
 
@@ -48,31 +48,31 @@ public class AdminRestController {
 
     @PostMapping("/table")
     public ResponseEntity<Table> addTable(HttpServletRequest request, @RequestBody Table table) {
-        logger.trace("@App-CustomExceptionHandler-addTable: request on " + request.getRequestURI());
+        logger.trace("@App-AdminRestController-addTable: request on " + request.getRequestURI());
 
 
-        logger.debug("@App-CustomExceptionHandler-addTable: table to add: " + table);
+        logger.debug("@App-AdminRestController-addTable: table to add: " + table);
 
 
         table = adminService.addTable(table);
 
         if (table == null) {
-            logger.debug("@App-CustomExceptionHandler-addTable: couldnt create table");
+            logger.debug("@App-AdminRestController-addTable: couldnt create table");
             throw new RuntimeException("Couldnt save the table");
         }
 
 
-        logger.debug("@App-CustomExceptionHandler-addTable: created Table: " + table);
+        logger.debug("@App-AdminRestController-addTable: created Table: " + table);
 
         return new ResponseEntity<>(table, HttpStatus.CREATED);
     }
 
     @GetMapping("/reservation")  // need to change to params urls
     public ResponseEntity<List<Reservation>> getReservationOnDate(HttpServletRequest request, @Valid @ModelAttribute Date date) {
-        logger.debug("@App-CustomExceptionHandler-getReservationOnDate: Got request on " + request.getRequestURI());
+        logger.debug("@App-AdminRestController-getReservationOnDate: Got request on " + request.getRequestURI());
 
 
-        logger.debug("@App-CustomExceptionHandler-getReservationOnDate: requested date: " + date);
+        logger.debug("@App-AdminRestController-getReservationOnDate: requested date: " + date);
 
 
         List<Reservation> reservationsOnDate = adminService.getReservationsOnDate(date);
@@ -80,7 +80,7 @@ public class AdminRestController {
         if (reservationsOnDate == null || reservationsOnDate.size() < 1)
             new ResponseEntity<>(null, HttpStatus.NO_CONTENT);
 
-        logger.debug("@App-CustomExceptionHandler-getReservationOnDate: reservations: " + reservationsOnDate);
+        logger.debug("@App-AdminRestController-getReservationOnDate: reservations: " + reservationsOnDate);
 
         return new ResponseEntity<>(reservationsOnDate, HttpStatus.OK);
     }
